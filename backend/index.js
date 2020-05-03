@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 var session = require('express-session');
 var cookieParser = require('cookie-parser');
 var cors = require('cors');
-const { mongoDB, frontendURL } = require('./config');
+const { mongoDB, frontendURL, secret } = require('./config');
 const User = require('./Models/UserModel');
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
@@ -54,7 +54,6 @@ mongoose.connect(mongoDB, options, (err, res) => {
 });
 
 app.post('/register', (req, res) => {
-    console.log('req', req.body)
 
     User.findOne({ email: req.body.email }, (error, user) => {
         if (error) {
@@ -81,6 +80,32 @@ app.post('/register', (req, res) => {
     });
 });
 
+app.post('/login', (req, res) => {
+    console.log('req', req.body)
+
+    User.findOne({ email: req.body.email }, (error, user) => {
+        if (error) {
+            res.status(500).send("Some Error Occurred!")
+        }
+        if (user) {
+            bcrypt.compare(req.body.pw, user.pw).then((pwRes) => {
+                if (!pwRes)
+                    res.status(500).send("Some Error Occurred!")
+                else {
+                    const payload = { _id: user._id, email: user.email };
+                    const token = jwt.sign(payload, secret, {
+                        expiresIn: 1008000
+                    });
+                    res.send({ success: true, token: "JWT " + token });
+                }
+            });
+
+        }
+        else {
+            res.send({ success: false, error: "Invalid Credentials" });
+        }
+    });
+});
 
 
 

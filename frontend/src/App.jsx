@@ -8,6 +8,7 @@ import Footer from './Components/Footer/Footer';
 import Home from './Components/Home/Home';
 import Login from './Components/Login/Login';
 import Register from './Components/Register/Register';
+import WildFireDetails from './Components/WildfireDetails/WildFireDetails';
 
 function App() {
   return (
