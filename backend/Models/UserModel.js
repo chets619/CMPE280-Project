@@ -8,7 +8,11 @@ var userSchema = new Schema({
     phone: { type: Number, required: false },
     city: { type: String, required: false },
     state: { type: String, required: false },
-    country: { type: String, required: false }
+    country: { type: String, required: false },
+    loc: {
+        lat: { type: Number },
+        lng: { type: Number }
+    }
 
 }, {
     versionKey: false

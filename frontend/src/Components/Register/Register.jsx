@@ -5,9 +5,42 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import configs from '../../config';
 import axios from "axios";
+import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 
 let Register = (props) => {
     const [data, setData] = useState({});
+    const [loc, setLoc] = useState({});
+
+    useEffect(() => {
+        let a = getCurrLoc();
+
+        a.then(currLoc => {
+            setLoc(currLoc);
+            setData({
+                ...data,
+                loc: JSON.parse(JSON.stringify(currLoc))
+            })
+        })
+    }, []);
+
+    const getCurrLoc = () => {
+        if (navigator && navigator.geolocation) {
+            return new Promise((resolve, reject) => {
+                navigator.geolocation.getCurrentPosition(pos => {
+                    const coords = pos.coords;
+                    resolve({
+                        lat: coords.latitude,
+                        lng: coords.longitude
+                    });
+                });
+            });
+        }
+        return {
+            lat: 0,
+            lng: 0
+        };
+    }
+
 
     const registerUser = async (e) => {
         e.preventDefault();
@@ -31,6 +64,19 @@ let Register = (props) => {
         } catch (error) {
             alert(error);
         }
+    }
+
+    const mapStyles = {
+    };
+
+    const mapClicked = (location, map) => {
+        console.log('location', JSON.parse(JSON.stringify(location)))
+        setLoc(location);
+        setData({
+            ...data,
+            loc: JSON.parse(JSON.stringify(location))
+        });
+        map.panTo(location);
     }
 
     return (
@@ -77,11 +123,28 @@ let Register = (props) => {
                         </Button>
                     </Form>
                 </div>
-                <div className="col-md-6"></div>
+                <div className="col-md-6">
+                    <center><h3>Mark Coords for wildfire reporting</h3></center>
+                    <Map
+                        className="asd"
+                        google={props.google}
+                        zoom={8}
+                        style={mapStyles}
+                        onClick={(t, map, c) => mapClicked(c.latLng, map)}
+                        initialCenter={{ lat: 47.444, lng: -122.176 }}
+                        center={loc}
+                    >
+                        <Marker
+                            name={'Location'}
+                            position={loc} />
+                    </Map>
+                </div>
             </div>
 
         </div>
     )
 
 }
-export default Register;
+export default GoogleApiWrapper({
+    apiKey: configs.gmaps
+})(Register);
