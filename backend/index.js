@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 var session = require('express-session');
 var cookieParser = require('cookie-parser');
 var cors = require('cors');
-const { mongoDB, frontendURL, secret } = require('./config');
+const { mongoDB, frontendURL, secret, nexmoKey, nexmoSecret, gmailid, gmailpw } = require('./config');
 const User = require('./Models/UserModel');
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
@@ -52,6 +52,33 @@ mongoose.connect(mongoDB, options, (err, res) => {
         console.log(`MongoDB Connected`);
     }
 });
+
+
+// SEND SMS
+
+const Nexmo = require('nexmo');
+
+const nexmo = new Nexmo({
+    apiKey: nexmoKey,
+    apiSecret: nexmoSecret
+});
+
+
+// SEND MAIL
+
+const nodemailer = require("nodemailer");
+
+var transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+        user: gmailid,
+        pass: gmailpw
+    }
+});
+
+
+
+
 
 app.post('/register', (req, res) => {
 
@@ -106,6 +133,59 @@ app.post('/login', (req, res) => {
         }
     });
 });
+
+
+app.post('/sendWildFireAlert', async (req, res) => {
+
+    const { lat, lng } = req.body;
+
+    let users = await User.find();
+
+    users = users.forEach(currUser => {
+        if (!(currUser.loc && currUser.loc.lat)) return;
+
+        if (getDistance(currUser.loc.lat, currUser.loc.lng, lat, lng) < 0.2) {
+
+            const from = '17065221566';
+            const to = currUser.phone;
+            const text = 'Wildfire Alert! There is a wildfire in your area!';
+
+            // nexmo.message.sendSms(from, to, text);
+
+
+            var mailOptions = {
+                from: gmailid,
+                to: currUser.email,
+                subject: 'WILDFIRE APP ALERT!',
+                text: 'There seems to be a wildfire in your area... Take care!'
+            };
+
+            // transporter.sendMail(mailOptions, function (error, info) {
+            //     if (error) {
+            //         console.log(error);
+            //     } else {
+            //         console.log('Email sent: ' + info.response);
+            //     }
+            // });
+        }
+    })
+
+    res.send({ success: true, msg: "Alert Sent!" });
+
+})
+
+
+const getDistance = (x1, y1, x2, y2) => {
+
+    var xs = x2 - x1,
+        ys = y2 - y1;
+
+    xs *= xs;
+    ys *= ys;
+
+    return Math.sqrt(xs + ys);
+
+}
 
 
 
