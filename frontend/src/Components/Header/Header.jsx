@@ -1,5 +1,5 @@
 import React, { useState, useEffect, Fragment, useMemo } from 'react';
-import { NavLink, Redirect } from 'react-router-dom';
+import { NavLink, Redirect, withRouter } from 'react-router-dom';
 import "./Header.scss";
 import { Logo } from "./logo.png"
 
@@ -12,7 +12,6 @@ let Header = (props) => {
         sessionStorage.clear();
         setLoggedIn(false);
     }
-    console.log('props', props)
 
     return (
         <header className="header d-flex flex-row justify-content-between row m-0">
@@ -29,7 +28,7 @@ let Header = (props) => {
                             <NavLink exact className="item mx-3 p-3" activeClassName="active" to="/register">Register</NavLink>
                             <NavLink exact className="item mx-3 p-3" activeClassName="active" to="/login">Login</NavLink>
                         </Fragment>
-                        : <NavLink exact className="item mx-3 p-3" activeClassName="active" to="/logout" onClick={e => onLogout()}>Logout</NavLink>
+                        : <NavLink exact className="item mx-3 p-3" activeClassName="active" to="/" onClick={e => onLogout()}>Logout</NavLink>
                 }
 
             </div>
@@ -37,4 +36,4 @@ let Header = (props) => {
     )
 
 }
-export default Header;
+export default withRouter(Header);

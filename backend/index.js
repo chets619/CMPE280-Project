@@ -145,6 +145,7 @@ app.post('/sendWildFireAlert', async (req, res) => {
         if (!(currUser.loc && currUser.loc.lat)) return;
 
         if (getDistance(currUser.loc.lat, currUser.loc.lng, lat, lng) < 0.2) {
+            console.log("sent");
 
             const from = '17065221566';
             const to = currUser.phone;
