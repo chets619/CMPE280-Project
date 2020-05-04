@@ -27,7 +27,10 @@ let Login = (props) => {
                 sessionStorage.setItem("user_id", decoded._id);
                 sessionStorage.setItem("useremail", decoded.email);
 
-                props.history.push("/wildfiredetails");
+                if (decoded.email == "admin")
+                    props.history.push("/reportwildfire");
+                else
+                    props.history.push("/wildfiredetails");
             }
             else
                 alert(a.data.error);
@@ -45,7 +48,7 @@ let Login = (props) => {
                 <Form className="p-5" onSubmit={e => loginUser(e)}>
                     <Form.Group controlId="formBasicEmail">
                         <Form.Label>Email address</Form.Label>
-                        <Form.Control type="email" placeholder="Enter email" name="email" onChange={e => setData({ ...data, [e.target.name]: e.target.value })} />
+                        <Form.Control type="text" placeholder="Enter email" name="email" onChange={e => setData({ ...data, [e.target.name]: e.target.value })} />
                         <Form.Text className="text-muted">
                             We'll never share your email with anyone else.
                         </Form.Text>

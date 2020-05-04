@@ -9,6 +9,7 @@ import Home from './Components/Home/Home';
 import Login from './Components/Login/Login';
 import Register from './Components/Register/Register';
 import WildFireDetails from './Components/WildfireDetails/WildFireDetails';
+import ReportWildfire from './Components/ReportWildfire/ReportWildfire';
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
 
         <div className="router-wrapper p-3">
           <Switch>
+            <Route exact path="/wildfiredetails" component={WildFireDetails} />
+            <Route exact path="/reportwildfire" component={ReportWildfire} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/" component={Home} />
