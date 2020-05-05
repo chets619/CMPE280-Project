@@ -1,0 +1,58 @@
+<html>
+  <head>
+   
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+
+  <body onload = "loadMap()">
+    <h2>Wild Fire</h2>
+    
+    <div id = "map" style = "width:1200px; height:500px;"></div>
+      <script>
+
+     
+        function getRetailRevenue(wildFireLocation){
+         
+          var arr=[];
+          for(var i=0;i<wildFireLocation.length;i++){
+            
+            
+                arr.push(wildFireLocation[i]);
+            
+          }
+
+          console.log(arr);
+          return arr;
+        }
+
+
+        function loadMap() {
+         
+         //get data from backend 
+          var wildFireLocation=$.get("http://localhost:3000/wildfire", function(data){
+           // Initialize Google Maps 
+           const wildFire=getRetailRevenue(data);
+          const mapOptions = {
+            //coordinates of headquater
+            center:new google.maps.LatLng(wildFire[11].LATITUDE, wildFire[11].LONGITUDE),
+            zoom: 7
+          }
+          const map = new google.maps.Map(document.getElementById("map"), mapOptions);
+          
+            for (var i=0;i<wildFire.length;i++) {
+          // Add the circle for this city to the map.
+          let marker = new google.maps.Marker({
+                    map: map,
+                    position: new google.maps.LatLng(wildFire[i].LATITUDE, wildFire[i].LONGITUDE),
+                    icon:'fire.png'
+              })
+        }
+
+
+           });
+                    }
+      </script>
+      <script src = "https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+
+  </body>
+</html>

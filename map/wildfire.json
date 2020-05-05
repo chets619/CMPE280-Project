@@ -1,0 +1,1232 @@
+[
+  {
+    "FIRE_YEAR": 2006,
+    "STAT_CAUSE_DESCR": "Miscellaneous",
+    "LATITUDE": 35.21666667,
+    "LONGITUDE": -100.93333333,
+    "STATE": "TX",
+    "DISCOVERY_DATE": 2453806.5,
+    "DISCOVERY_TIME": 1100,
+    "FIRE_SIZE": 427696
+  },
+  {
+    "FIRE_YEAR": 2006,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 45.53611111,
+    "LONGITUDE": -109.93472222,
+    "STATE": "MT",
+    "DISCOVERY_DATE": 2453969.5,
+    "DISCOVERY_TIME": 1630,
+    "FIRE_SIZE": 207115
+  },
+  {
+    "FIRE_YEAR": 2006,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 46.14305556,
+    "LONGITUDE": -118.04416667,
+    "STATE": "WA",
+    "DISCOVERY_DATE": 2453968.5,
+    "DISCOVERY_TIME": 2240,
+    "FIRE_SIZE": 109259
+  },
+  {
+    "FIRE_YEAR": 2006,
+    "STAT_CAUSE_DESCR": "Debris Burning",
+    "LATITUDE": 34.63222222,
+    "LONGITUDE": -118.76972222,
+    "STATE": "CA",
+    "DISCOVERY_DATE": 2453982.5,
+    "DISCOVERY_TIME": 1415,
+    "FIRE_SIZE": 162702
+  },
+  {
+    "FIRE_YEAR": 2006,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 48.50333333,
+    "LONGITUDE": -120.04444444,
+    "STATE": "WA",
+    "DISCOVERY_DATE": 2453940.5,
+    "DISCOVERY_TIME": 1330,
+    "FIRE_SIZE": 113011
+  },
+  {
+    "FIRE_YEAR": 2007,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 45.42916667,
+    "LONGITUDE": -115.63666667,
+    "STATE": "ID",
+    "DISCOVERY_DATE": 2454294.5,
+    "DISCOVERY_TIME": 2114,
+    "FIRE_SIZE": 102000
+  },
+  {
+    "FIRE_YEAR": 2007,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 44.495,
+    "LONGITUDE": -115.69722222,
+    "STATE": "ID",
+    "DISCOVERY_DATE": 2454298.5,
+    "DISCOVERY_TIME": 1812,
+    "FIRE_SIZE": 174231
+  },
+  {
+    "FIRE_YEAR": 2007,
+    "STAT_CAUSE_DESCR": "Equipment Use",
+    "LATITUDE": 34.77916667,
+    "LONGITUDE": -120.09,
+    "STATE": "CA",
+    "DISCOVERY_DATE": 2454285.5,
+    "DISCOVERY_TIME": 1054,
+    "FIRE_SIZE": 240207
+  },
+  {
+    "FIRE_YEAR": 2007,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 45.13777778,
+    "LONGITUDE": -115.85583333,
+    "STATE": "ID",
+    "DISCOVERY_DATE": 2454295.5,
+    "DISCOVERY_TIME": 930,
+    "FIRE_SIZE": 120077
+  },
+  {
+    "FIRE_YEAR": 2007,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 30.5,
+    "LONGITUDE": -82.36666667,
+    "STATE": "FL",
+    "DISCOVERY_DATE": 2454228.5,
+    "DISCOVERY_TIME": 630,
+    "FIRE_SIZE": 123014
+  },
+  {
+    "FIRE_YEAR": 2007,
+    "STAT_CAUSE_DESCR": "Miscellaneous",
+    "LATITUDE": 33.07444444,
+    "LONGITUDE": -116.71111111,
+    "STATE": "CA",
+    "DISCOVERY_DATE": 2454394.5,
+    "DISCOVERY_TIME": 1236,
+    "FIRE_SIZE": 197990
+  },
+  {
+    "FIRE_YEAR": 2008,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 36.28111111,
+    "LONGITUDE": -121.65833333,
+    "STATE": "CA",
+    "DISCOVERY_DATE": 2454638.5,
+    "DISCOVERY_TIME": 1329,
+    "FIRE_SIZE": 162818
+  },
+  {
+    "FIRE_YEAR": 2009,
+    "STAT_CAUSE_DESCR": "Arson",
+    "LATITUDE": 34.2425,
+    "LONGITUDE": -118.18888889,
+    "STATE": "CA",
+    "DISCOVERY_DATE": 2455069.5,
+    "DISCOVERY_TIME": 1519,
+    "FIRE_SIZE": 160371
+  },
+  {
+    "FIRE_YEAR": 1992,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 43.48,
+    "LONGITUDE": -115.68833333,
+    "STATE": "ID",
+    "DISCOVERY_DATE": 2448853.5,
+    "DISCOVERY_TIME": 1600,
+    "FIRE_SIZE": 177544
+  },
+  {
+    "FIRE_YEAR": 1994,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 43.78166667,
+    "LONGITUDE": -115.62833333,
+    "STATE": "ID",
+    "DISCOVERY_DATE": 2449561.5,
+    "DISCOVERY_TIME": 600,
+    "FIRE_SIZE": 146400
+  },
+  {
+    "FIRE_YEAR": 1994,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 45.115,
+    "LONGITUDE": -116.17833333,
+    "STATE": "ID",
+    "DISCOVERY_DATE": 2449566.5,
+    "DISCOVERY_TIME": 1200,
+    "FIRE_SIZE": 115659
+  },
+  {
+    "FIRE_YEAR": 1994,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 47.83333333,
+    "LONGITUDE": -120.33333333,
+    "STATE": "WA",
+    "DISCOVERY_DATE": 2449557.5,
+    "DISCOVERY_TIME": 2130,
+    "FIRE_SIZE": 140000
+  },
+  {
+    "FIRE_YEAR": 1996,
+    "STAT_CAUSE_DESCR": "Equipment Use",
+    "LATITUDE": 35.42,
+    "LONGITUDE": -120.42277778,
+    "STATE": "CA",
+    "DISCOVERY_DATE": 2450310.5,
+    "DISCOVERY_TIME": 1417,
+    "FIRE_SIZE": 106668
+  },
+  {
+    "FIRE_YEAR": 1999,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 41.1025,
+    "LONGITUDE": -123.375,
+    "STATE": "CA",
+    "DISCOVERY_DATE": 2451413.5,
+    "DISCOVERY_TIME": 1640,
+    "FIRE_SIZE": 124898
+  },
+  {
+    "FIRE_YEAR": 2000,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 45.15138889,
+    "LONGITUDE": -115.18583333,
+    "STATE": "ID",
+    "DISCOVERY_DATE": 2451756.5,
+    "DISCOVERY_TIME": 1630,
+    "FIRE_SIZE": 149772
+  },
+  {
+    "FIRE_YEAR": 2000,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 45.96416667,
+    "LONGITUDE": -114.01722222,
+    "STATE": "MT",
+    "DISCOVERY_DATE": 2451756.5,
+    "DISCOVERY_TIME": 1840,
+    "FIRE_SIZE": 145040
+  },
+  {
+    "FIRE_YEAR": 2000,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 45.22166667,
+    "LONGITUDE": -114.495,
+    "STATE": "ID",
+    "DISCOVERY_DATE": 2451735.5,
+    "DISCOVERY_TIME": 929,
+    "FIRE_SIZE": 172135
+  },
+  {
+    "FIRE_YEAR": 2002,
+    "STAT_CAUSE_DESCR": "Campfire",
+    "LATITUDE": 35.87361111,
+    "LONGITUDE": -118.45805556,
+    "STATE": "CA",
+    "DISCOVERY_DATE": 2452476.5,
+    "DISCOVERY_TIME": 1452,
+    "FIRE_SIZE": 150696
+  },
+  {
+    "FIRE_YEAR": 2002,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 42.03888889,
+    "LONGITUDE": -123.91166667,
+    "STATE": "OR",
+    "DISCOVERY_DATE": 2452468.5,
+    "DISCOVERY_TIME": 1608,
+    "FIRE_SIZE": 499945
+  },
+  {
+    "FIRE_YEAR": 2002,
+    "STAT_CAUSE_DESCR": "Miscellaneous",
+    "LATITUDE": 39.0575,
+    "LONGITUDE": -105.40833333,
+    "STATE": "CO",
+    "DISCOVERY_DATE": 2452433.5,
+    "DISCOVERY_TIME": 1631,
+    "FIRE_SIZE": 137760
+  },
+  {
+    "FIRE_YEAR": 2003,
+    "STAT_CAUSE_DESCR": "Campfire",
+    "LATITUDE": 32.98555556,
+    "LONGITUDE": -116.7275,
+    "STATE": "CA",
+    "DISCOVERY_DATE": 2452937.5,
+    "DISCOVERY_TIME": 1745,
+    "FIRE_SIZE": 280059
+  },
+  {
+    "FIRE_YEAR": 2004,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 34.08111111,
+    "LONGITUDE": -111.60472222,
+    "STATE": "AZ",
+    "DISCOVERY_DATE": 2453180.5,
+    "DISCOVERY_TIME": 1623,
+    "FIRE_SIZE": 119500
+  },
+  {
+    "FIRE_YEAR": 1999,
+    "STAT_CAUSE_DESCR": "Arson",
+    "LATITUDE": 26.2337,
+    "LONGITUDE": -80.7665,
+    "STATE": "FL",
+    "DISCOVERY_DATE": 2451287.5,
+    "DISCOVERY_TIME": 1000,
+    "FIRE_SIZE": 158000
+  },
+  {
+    "FIRE_YEAR": 1996,
+    "STAT_CAUSE_DESCR": "Equipment Use",
+    "LATITUDE": 44.9832,
+    "LONGITUDE": -121.3512,
+    "STATE": "OR",
+    "DISCOVERY_DATE": 2450305.5,
+    "DISCOVERY_TIME": 1605,
+    "FIRE_SIZE": 118230
+  },
+  {
+    "FIRE_YEAR": 1993,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 65.8997,
+    "LONGITUDE": -143.6358,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2449182.5,
+    "DISCOVERY_TIME": 1748,
+    "FIRE_SIZE": 215360
+  },
+  {
+    "FIRE_YEAR": 1997,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 63.566,
+    "LONGITUDE": -157.2024,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2450606.5,
+    "DISCOVERY_TIME": 1954,
+    "FIRE_SIZE": 365871
+  },
+  {
+    "FIRE_YEAR": 1997,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 63.6327,
+    "LONGITUDE": -158.4191,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2450609.5,
+    "DISCOVERY_TIME": 1457,
+    "FIRE_SIZE": 308120
+  },
+  {
+    "FIRE_YEAR": 1997,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 61.9827,
+    "LONGITUDE": -157.0857,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2450624.5,
+    "DISCOVERY_TIME": 1841,
+    "FIRE_SIZE": 606945
+  },
+  {
+    "FIRE_YEAR": 1997,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 62.2993,
+    "LONGITUDE": -157.2024,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2450625.5,
+    "DISCOVERY_TIME": 2135,
+    "FIRE_SIZE": 101820
+  },
+  {
+    "FIRE_YEAR": 1999,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 66.7925,
+    "LONGITUDE": -142.2407,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2451349.5,
+    "DISCOVERY_TIME": 1453,
+    "FIRE_SIZE": 232828
+  },
+  {
+    "FIRE_YEAR": 1996,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 43.2171,
+    "LONGITUDE": -113.2342,
+    "STATE": "ID",
+    "DISCOVERY_DATE": 2450322.5,
+    "DISCOVERY_TIME": 1830,
+    "FIRE_SIZE": 206202.6
+  },
+  {
+    "FIRE_YEAR": 1999,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 43.0774,
+    "LONGITUDE": -113.36,
+    "STATE": "ID",
+    "DISCOVERY_DATE": 2451393.5,
+    "DISCOVERY_TIME": 400,
+    "FIRE_SIZE": 132208
+  },
+  {
+    "FIRE_YEAR": 1992,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 43.0666,
+    "LONGITUDE": -113.9009,
+    "STATE": "ID",
+    "DISCOVERY_DATE": 2448836.5,
+    "DISCOVERY_TIME": 2156,
+    "FIRE_SIZE": 149250
+  },
+  {
+    "FIRE_YEAR": 1996,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 43.0716,
+    "LONGITUDE": -114.0923,
+    "STATE": "ID",
+    "DISCOVERY_DATE": 2450267.5,
+    "DISCOVERY_TIME": 1822,
+    "FIRE_SIZE": 178459
+  },
+  {
+    "FIRE_YEAR": 1999,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 39.9083,
+    "LONGITUDE": -117.3437,
+    "STATE": "NV",
+    "DISCOVERY_DATE": 2451394.5,
+    "DISCOVERY_TIME": 1510,
+    "FIRE_SIZE": 139754.6
+  },
+  {
+    "FIRE_YEAR": 1999,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 40.1616,
+    "LONGITUDE": -116.0009,
+    "STATE": "NV",
+    "DISCOVERY_DATE": 2451395.5,
+    "DISCOVERY_TIME": 953,
+    "FIRE_SIZE": 199288
+  },
+  {
+    "FIRE_YEAR": 1999,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 40.5857,
+    "LONGITUDE": -118.499,
+    "STATE": "NV",
+    "DISCOVERY_DATE": 2451394.5,
+    "DISCOVERY_TIME": 1500,
+    "FIRE_SIZE": 231389
+  },
+  {
+    "FIRE_YEAR": 2005,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 62.1167,
+    "LONGITUDE": -159.15,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2453584.5,
+    "DISCOVERY_TIME": 1759,
+    "FIRE_SIZE": 121149
+  },
+  {
+    "FIRE_YEAR": 2000,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 43.3025,
+    "LONGITUDE": -108.5921,
+    "STATE": "WY",
+    "DISCOVERY_DATE": 2451763.5,
+    "DISCOVERY_TIME": 1230,
+    "FIRE_SIZE": 137069
+  },
+  {
+    "FIRE_YEAR": 2002,
+    "STAT_CAUSE_DESCR": "Arson",
+    "LATITUDE": 34.1084,
+    "LONGITUDE": -110.4859,
+    "STATE": "AZ",
+    "DISCOVERY_DATE": 2452443.5,
+    "DISCOVERY_TIME": 1623,
+    "FIRE_SIZE": 259158.9
+  },
+  {
+    "FIRE_YEAR": 2002,
+    "STAT_CAUSE_DESCR": "Arson",
+    "LATITUDE": 34.1362,
+    "LONGITUDE": -110.7029,
+    "STATE": "AZ",
+    "DISCOVERY_DATE": 2452445.5,
+    "DISCOVERY_TIME": 841,
+    "FIRE_SIZE": 209704.1
+  },
+  {
+    "FIRE_YEAR": 2000,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 64.7231,
+    "LONGITUDE": -151.1924,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2451708.5,
+    "DISCOVERY_TIME": 1653,
+    "FIRE_SIZE": 164387
+  },
+  {
+    "FIRE_YEAR": 2000,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 64.9283,
+    "LONGITUDE": -153.4117,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2451709.5,
+    "DISCOVERY_TIME": 1745,
+    "FIRE_SIZE": 141497
+  },
+  {
+    "FIRE_YEAR": 2001,
+    "STAT_CAUSE_DESCR": "Miscellaneous",
+    "LATITUDE": 64.6618,
+    "LONGITUDE": -148.2055,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2452080.5,
+    "DISCOVERY_TIME": 1433,
+    "FIRE_SIZE": 112112
+  },
+  {
+    "FIRE_YEAR": 2002,
+    "STAT_CAUSE_DESCR": "Arson",
+    "LATITUDE": 62.6994,
+    "LONGITUDE": -155.6523,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2452416.5,
+    "DISCOVERY_TIME": 1822,
+    "FIRE_SIZE": 189688
+  },
+  {
+    "FIRE_YEAR": 2002,
+    "STAT_CAUSE_DESCR": "Equipment Use",
+    "LATITUDE": 65.4376,
+    "LONGITUDE": -148.8181,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2452417.5,
+    "DISCOVERY_TIME": 731,
+    "FIRE_SIZE": 115328
+  },
+  {
+    "FIRE_YEAR": 2002,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 64.1353,
+    "LONGITUDE": -152.5418,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2452430.5,
+    "DISCOVERY_TIME": 1455,
+    "FIRE_SIZE": 128983.1
+  },
+  {
+    "FIRE_YEAR": 2002,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 64.6403,
+    "LONGITUDE": -150.4502,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2452433.5,
+    "DISCOVERY_TIME": 1524,
+    "FIRE_SIZE": 257549
+  },
+  {
+    "FIRE_YEAR": 2002,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 62.3993,
+    "LONGITUDE": -158.8857,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2452472.5,
+    "DISCOVERY_TIME": 1430,
+    "FIRE_SIZE": 226833
+  },
+  {
+    "FIRE_YEAR": 2002,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 62.8443,
+    "LONGITUDE": -158.351,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2452473.5,
+    "DISCOVERY_TIME": 926,
+    "FIRE_SIZE": 152962
+  },
+  {
+    "FIRE_YEAR": 2003,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 65.6671,
+    "LONGITUDE": -148.992,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2452807.5,
+    "DISCOVERY_TIME": 1640,
+    "FIRE_SIZE": 117929.7
+  },
+  {
+    "FIRE_YEAR": 2004,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 65.2782,
+    "LONGITUDE": -145.0594,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2453163.5,
+    "DISCOVERY_TIME": 1549,
+    "FIRE_SIZE": 214868.7
+  },
+  {
+    "FIRE_YEAR": 2004,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 65.7467,
+    "LONGITUDE": -152.2315,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2453168.5,
+    "DISCOVERY_TIME": 2316,
+    "FIRE_SIZE": 419884
+  },
+  {
+    "FIRE_YEAR": 2004,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 65.2663,
+    "LONGITUDE": -146.8858,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2453169.5,
+    "DISCOVERY_TIME": 1345,
+    "FIRE_SIZE": 537627
+  },
+  {
+    "FIRE_YEAR": 2004,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 65.983,
+    "LONGITUDE": -145.0525,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2453170.5,
+    "DISCOVERY_TIME": 1955,
+    "FIRE_SIZE": 243254
+  },
+  {
+    "FIRE_YEAR": 2004,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 65.5169,
+    "LONGITUDE": -143.1724,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2453170.5,
+    "DISCOVERY_TIME": 2100,
+    "FIRE_SIZE": 243900
+  },
+  {
+    "FIRE_YEAR": 2004,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 64.898,
+    "LONGITUDE": -141.984,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2453171.5,
+    "DISCOVERY_TIME": 815,
+    "FIRE_SIZE": 103092
+  },
+  {
+    "FIRE_YEAR": 2004,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 67.2071,
+    "LONGITUDE": -146.3702,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2453171.5,
+    "DISCOVERY_TIME": 1140,
+    "FIRE_SIZE": 403993
+  },
+  {
+    "FIRE_YEAR": 2004,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 66.9597,
+    "LONGITUDE": -145.346,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2453171.5,
+    "DISCOVERY_TIME": 1339,
+    "FIRE_SIZE": 344833
+  },
+  {
+    "FIRE_YEAR": 2004,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 64.0163,
+    "LONGITUDE": -142.0023,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2453171.5,
+    "DISCOVERY_TIME": 1540,
+    "FIRE_SIZE": 320155
+  },
+  {
+    "FIRE_YEAR": 2004,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 63.083,
+    "LONGITUDE": -141.3355,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2453173.5,
+    "DISCOVERY_TIME": 1650,
+    "FIRE_SIZE": 125643
+  },
+  {
+    "FIRE_YEAR": 2004,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 63.8163,
+    "LONGITUDE": -143.819,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2453174.5,
+    "DISCOVERY_TIME": 1440,
+    "FIRE_SIZE": 463994
+  },
+  {
+    "FIRE_YEAR": 2004,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 63.4497,
+    "LONGITUDE": -142.6689,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2453177.5,
+    "DISCOVERY_TIME": 1558,
+    "FIRE_SIZE": 284595
+  },
+  {
+    "FIRE_YEAR": 2004,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 64.4677,
+    "LONGITUDE": -157.1933,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2453184.5,
+    "DISCOVERY_TIME": 820,
+    "FIRE_SIZE": 265919.9
+  },
+  {
+    "FIRE_YEAR": 2004,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 66.9112,
+    "LONGITUDE": -151.5027,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2453192.5,
+    "DISCOVERY_TIME": 1703,
+    "FIRE_SIZE": 135627
+  },
+  {
+    "FIRE_YEAR": 2004,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 66.3029,
+    "LONGITUDE": -149.8843,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2453192.5,
+    "DISCOVERY_TIME": 1800,
+    "FIRE_SIZE": 483280
+  },
+  {
+    "FIRE_YEAR": 2004,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 66.5245,
+    "LONGITUDE": -151.4143,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2453192.5,
+    "DISCOVERY_TIME": 1803,
+    "FIRE_SIZE": 108577
+  },
+  {
+    "FIRE_YEAR": 2004,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 65.713,
+    "LONGITUDE": -144.3547,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2453197.5,
+    "DISCOVERY_TIME": 1300,
+    "FIRE_SIZE": 201894
+  },
+  {
+    "FIRE_YEAR": 2004,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 66.7329,
+    "LONGITUDE": -148.836,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2453229.5,
+    "DISCOVERY_TIME": 855,
+    "FIRE_SIZE": 163239
+  },
+  {
+    "FIRE_YEAR": 2005,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 67.1003,
+    "LONGITUDE": -150.2464,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2453520.5,
+    "DISCOVERY_TIME": 1243,
+    "FIRE_SIZE": 172320.8
+  },
+  {
+    "FIRE_YEAR": 2005,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 65.8042,
+    "LONGITUDE": -141.2422,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2453532.5,
+    "DISCOVERY_TIME": 1635,
+    "FIRE_SIZE": 154431.6
+  },
+  {
+    "FIRE_YEAR": 2005,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 64.7894,
+    "LONGITUDE": -153.5347,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2453532.5,
+    "DISCOVERY_TIME": 1817,
+    "FIRE_SIZE": 193399.8
+  },
+  {
+    "FIRE_YEAR": 2005,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 66.8342,
+    "LONGITUDE": -144.4403,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2453533.5,
+    "DISCOVERY_TIME": 1531,
+    "FIRE_SIZE": 114596.5
+  },
+  {
+    "FIRE_YEAR": 2005,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 66.7333,
+    "LONGITUDE": -148.0833,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2453534.5,
+    "DISCOVERY_TIME": 1239,
+    "FIRE_SIZE": 244599.7
+  },
+  {
+    "FIRE_YEAR": 2005,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 63.4722,
+    "LONGITUDE": -152.6225,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2453535.5,
+    "DISCOVERY_TIME": 1704,
+    "FIRE_SIZE": 114443.5
+  },
+  {
+    "FIRE_YEAR": 2005,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 65.7919,
+    "LONGITUDE": -148.8017,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2453537.5,
+    "DISCOVERY_TIME": 1700,
+    "FIRE_SIZE": 117747.7
+  },
+  {
+    "FIRE_YEAR": 2005,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 66.7236,
+    "LONGITUDE": -150.5219,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2453537.5,
+    "DISCOVERY_TIME": 1719,
+    "FIRE_SIZE": 190942.3
+  },
+  {
+    "FIRE_YEAR": 2005,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 66.1642,
+    "LONGITUDE": -152.0142,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2453537.5,
+    "DISCOVERY_TIME": 1902,
+    "FIRE_SIZE": 231821.8
+  },
+  {
+    "FIRE_YEAR": 2005,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 65.7183,
+    "LONGITUDE": -147.4611,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2453541.5,
+    "DISCOVERY_TIME": 1930,
+    "FIRE_SIZE": 166438.6
+  },
+  {
+    "FIRE_YEAR": 2005,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 64.6564,
+    "LONGITUDE": -141.0222,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2453563.5,
+    "DISCOVERY_TIME": 1351,
+    "FIRE_SIZE": 116371
+  },
+  {
+    "FIRE_YEAR": 2005,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 66.4833,
+    "LONGITUDE": -142.2,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2453570.5,
+    "DISCOVERY_TIME": 1051,
+    "FIRE_SIZE": 236701.5
+  },
+  {
+    "FIRE_YEAR": 2005,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 67.5333,
+    "LONGITUDE": -141.9833,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2453575.5,
+    "DISCOVERY_TIME": 1621,
+    "FIRE_SIZE": 191444.4
+  },
+  {
+    "FIRE_YEAR": 2005,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 67.2225,
+    "LONGITUDE": -142.7331,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2453575.5,
+    "DISCOVERY_TIME": 1652,
+    "FIRE_SIZE": 131913.3
+  },
+  {
+    "FIRE_YEAR": 2005,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 64.9717,
+    "LONGITUDE": -156.2203,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2453576.5,
+    "DISCOVERY_TIME": 1413,
+    "FIRE_SIZE": 194015.2
+  },
+  {
+    "FIRE_YEAR": 2005,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 63.65,
+    "LONGITUDE": -159.1167,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2453577.5,
+    "DISCOVERY_TIME": 1349,
+    "FIRE_SIZE": 117211
+  },
+  {
+    "FIRE_YEAR": 2007,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 69.0472,
+    "LONGITUDE": -150.8367,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2454297.5,
+    "DISCOVERY_TIME": 1423,
+    "FIRE_SIZE": 256734.1
+  },
+  {
+    "FIRE_YEAR": 2009,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 63.2,
+    "LONGITUDE": -153.27,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2454974.5,
+    "DISCOVERY_TIME": 1807,
+    "FIRE_SIZE": 164318
+  },
+  {
+    "FIRE_YEAR": 2009,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 64.2178,
+    "LONGITUDE": -153.8894,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2454995.5,
+    "DISCOVERY_TIME": 1140,
+    "FIRE_SIZE": 126581.6
+  },
+  {
+    "FIRE_YEAR": 2009,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 64.4803,
+    "LONGITUDE": -151.3194,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2454999.5,
+    "DISCOVERY_TIME": 1801,
+    "FIRE_SIZE": 141125.7
+  },
+  {
+    "FIRE_YEAR": 2009,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 66.2236,
+    "LONGITUDE": -143.2572,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2455002.5,
+    "DISCOVERY_TIME": 2030,
+    "FIRE_SIZE": 349449.9
+  },
+  {
+    "FIRE_YEAR": 2009,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 64.3689,
+    "LONGITUDE": -152.6886,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2455023.5,
+    "DISCOVERY_TIME": 900,
+    "FIRE_SIZE": 164541.9
+  },
+  {
+    "FIRE_YEAR": 2009,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 64.3481,
+    "LONGITUDE": -147.9608,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2455024.5,
+    "DISCOVERY_TIME": 1531,
+    "FIRE_SIZE": 125381.6
+  },
+  {
+    "FIRE_YEAR": 2009,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 65.9464,
+    "LONGITUDE": -146.8197,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2455030.5,
+    "DISCOVERY_TIME": 1707,
+    "FIRE_SIZE": 169638.7
+  },
+  {
+    "FIRE_YEAR": 2009,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 64.12,
+    "LONGITUDE": -148.75,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2455045.5,
+    "DISCOVERY_TIME": 1453,
+    "FIRE_SIZE": 101150
+  },
+  {
+    "FIRE_YEAR": 2006,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 42.9569,
+    "LONGITUDE": -113.2411,
+    "STATE": "ID",
+    "DISCOVERY_DATE": 2453962.5,
+    "DISCOVERY_TIME": 235,
+    "FIRE_SIZE": 220042.1
+  },
+  {
+    "FIRE_YEAR": 2005,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 42.6289,
+    "LONGITUDE": -115.5064,
+    "STATE": "ID",
+    "DISCOVERY_DATE": 2453566.5,
+    "DISCOVERY_TIME": 1830,
+    "FIRE_SIZE": 192846.1
+  },
+  {
+    "FIRE_YEAR": 2007,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 41.9492,
+    "LONGITUDE": -115.6217,
+    "STATE": "NV",
+    "DISCOVERY_DATE": 2454297.5,
+    "DISCOVERY_TIME": 1912,
+    "FIRE_SIZE": 147335
+  },
+  {
+    "FIRE_YEAR": 2003,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 47.5994,
+    "LONGITUDE": -107.5123,
+    "STATE": "MT",
+    "DISCOVERY_DATE": 2452839.5,
+    "DISCOVERY_TIME": 1800,
+    "FIRE_SIZE": 125900
+  },
+  {
+    "FIRE_YEAR": 2006,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 47.6697,
+    "LONGITUDE": -106.7806,
+    "STATE": "MT",
+    "DISCOVERY_DATE": 2453933.5,
+    "DISCOVERY_TIME": 2200,
+    "FIRE_SIZE": 117292
+  },
+  {
+    "FIRE_YEAR": 2006,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 41.3603,
+    "LONGITUDE": -116.9144,
+    "STATE": "NV",
+    "DISCOVERY_DATE": 2453941.5,
+    "DISCOVERY_TIME": 953,
+    "FIRE_SIZE": 238462.6
+  },
+  {
+    "FIRE_YEAR": 2006,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 41.5578,
+    "LONGITUDE": -115.5242,
+    "STATE": "NV",
+    "DISCOVERY_DATE": 2453962.5,
+    "DISCOVERY_TIME": 1519,
+    "FIRE_SIZE": 141707.4
+  },
+  {
+    "FIRE_YEAR": 2006,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 41.4672,
+    "LONGITUDE": -116.3319,
+    "STATE": "NV",
+    "DISCOVERY_DATE": 2453981.5,
+    "DISCOVERY_TIME": 1825,
+    "FIRE_SIZE": 108563.6
+  },
+  {
+    "FIRE_YEAR": 2006,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 40.8258,
+    "LONGITUDE": -116.7203,
+    "STATE": "NV",
+    "DISCOVERY_DATE": 2453981.5,
+    "DISCOVERY_TIME": 2046,
+    "FIRE_SIZE": 150270.7
+  },
+  {
+    "FIRE_YEAR": 2007,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 41.7822,
+    "LONGITUDE": -114.1667,
+    "STATE": "NV",
+    "DISCOVERY_DATE": 2454299.5,
+    "DISCOVERY_TIME": 1228,
+    "FIRE_SIZE": 154973
+  },
+  {
+    "FIRE_YEAR": 2005,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 37.1208,
+    "LONGITUDE": -114.7169,
+    "STATE": "NV",
+    "DISCOVERY_DATE": 2453543.5,
+    "DISCOVERY_TIME": 530,
+    "FIRE_SIZE": 149131
+  },
+  {
+    "FIRE_YEAR": 2005,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 37.2,
+    "LONGITUDE": -114.3831,
+    "STATE": "NV",
+    "DISCOVERY_DATE": 2453543.5,
+    "DISCOVERY_TIME": 1610,
+    "FIRE_SIZE": 238058
+  },
+  {
+    "FIRE_YEAR": 2005,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 37.1033,
+    "LONGITUDE": -114.8417,
+    "STATE": "NV",
+    "DISCOVERY_DATE": 2453549.5,
+    "DISCOVERY_TIME": 1000,
+    "FIRE_SIZE": 168293
+  },
+  {
+    "FIRE_YEAR": 2007,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 38.5756,
+    "LONGITUDE": -112.9731,
+    "STATE": "UT",
+    "DISCOVERY_DATE": 2454287.5,
+    "DISCOVERY_TIME": 1545,
+    "FIRE_SIZE": 357185
+  },
+  {
+    "FIRE_YEAR": 2002,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 63.5911,
+    "LONGITUDE": -152.6757,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2452472.5,
+    "DISCOVERY_TIME": 1748,
+    "FIRE_SIZE": 117920
+  },
+  {
+    "FIRE_YEAR": 2006,
+    "STAT_CAUSE_DESCR": "Missing/Undefined",
+    "LATITUDE": 35.6678,
+    "LONGITUDE": -101.3708,
+    "STATE": "TX",
+    "DISCOVERY_DATE": 2453806.5,
+    "DISCOVERY_TIME": 1120,
+    "FIRE_SIZE": 479549
+  },
+  {
+    "FIRE_YEAR": 2000,
+    "STAT_CAUSE_DESCR": "Equipment Use",
+    "LATITUDE": 46.57194444,
+    "LONGITUDE": -119.77277778,
+    "STATE": "WA",
+    "DISCOVERY_DATE": 2451722.5,
+    "DISCOVERY_TIME": 1339,
+    "FIRE_SIZE": 163884
+  },
+  {
+    "FIRE_YEAR": 2002,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 30.6688889,
+    "LONGITUDE": -82.2936111,
+    "STATE": "GA",
+    "DISCOVERY_DATE": 2452397.5,
+    "DISCOVERY_TIME": 1200,
+    "FIRE_SIZE": 124110
+  },
+  {
+    "FIRE_YEAR": 2003,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 66.85,
+    "LONGITUDE": -147.2681,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2452814.5,
+    "DISCOVERY_TIME": 1845,
+    "FIRE_SIZE": 192489
+  },
+  {
+    "FIRE_YEAR": 2007,
+    "STAT_CAUSE_DESCR": "Miscellaneous",
+    "LATITUDE": 30.80277778,
+    "LONGITUDE": -82.2725,
+    "STATE": "GA",
+    "DISCOVERY_DATE": 2454206.5,
+    "DISCOVERY_TIME": 2100,
+    "FIRE_SIZE": 191474
+  },
+  {
+    "FIRE_YEAR": 2004,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 64.33333999,
+    "LONGITUDE": -145.16669998,
+    "STATE": "AK",
+    "DISCOVERY_DATE": 2453179.5,
+    "DISCOVERY_TIME": "",
+    "FIRE_SIZE": 175815
+  },
+  {
+    "FIRE_YEAR": 2006,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 45.9228,
+    "LONGITUDE": -107.8561,
+    "STATE": "MT",
+    "DISCOVERY_DATE": 2453928.5,
+    "DISCOVERY_TIME": "",
+    "FIRE_SIZE": 121687
+  },
+  {
+    "FIRE_YEAR": 2008,
+    "STAT_CAUSE_DESCR": "Lightning",
+    "LATITUDE": 46.2377,
+    "LONGITUDE": -108.3417,
+    "STATE": "MT",
+    "DISCOVERY_DATE": 2454700.5,
+    "DISCOVERY_TIME": "",
+    "FIRE_SIZE": 102379.53
+  },
+  {
+    "FIRE_YEAR": 2008,
+    "STAT_CAUSE_DESCR": "Miscellaneous",
+    "LATITUDE": 31.74216,
+    "LONGITUDE": -101.0438,
+    "STATE": "TX",
+    "DISCOVERY_DATE": 2454521.5,
+    "DISCOVERY_TIME": "",
+    "FIRE_SIZE": 220000
+  }
+]
