@@ -189,6 +189,16 @@ const getDistance = (x1, y1, x2, y2) => {
 }
 
 
+app.get('/getFireData', (req, res) => {
+    var fs = require("fs");
+    var contents = fs.readFileSync("wildfire.json");
+
+    var jsonContent = JSON.parse(contents);
+
+    res.send({ success: true, data: jsonContent })
+})
+
+
 
 //start your server on port 3001
 app.listen(3001);
