@@ -1,0 +1,25 @@
+.fire-bg {
+    background: url('https://www.ready.gov/sites/default/files/2019-09/Wildfire%20toolkit_1.jpg');
+    background-size: cover;
+    background-position: bottom;
+    color: white;
+}
+
+.img-none {
+    opacity: 0;
+}
+
+table tr td:last-child { display: none; }
+table tr th:last-child { display: none; }
+
+td, th{ 
+    padding: 0.5rem;
+    border: solid 1px #ccc;
+    background-color: white;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.acres {
+    display: block !important;
+}

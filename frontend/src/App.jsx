@@ -19,7 +19,7 @@ function App() {
 
         <div className="router-wrapper p-3">
           <Switch>
-            <Route exact path="/wildfiredetails" component={WildFireDetails} />
+            <Route exact path="/about" component={WildFireDetails} />
             <Route exact path="/reportwildfire" component={ReportWildfire} />
             <Route exact path="/register" component={Register} />
             <Route exact path="/profile/:id" component={Register} />

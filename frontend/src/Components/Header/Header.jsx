@@ -24,7 +24,7 @@ let Header = (props) => {
                 {
                     sessionStorage.getItem("useremail") == null ?
                         <Fragment>
-                            <NavLink exact className="item mx-3 p-3" activeClassName="active" to="/about">About Us</NavLink>
+                            <NavLink exact className="item mx-3 p-3" activeClassName="active" to="/about">About</NavLink>
                             <NavLink exact className="item mx-3 p-3" activeClassName="active" to="/register">Register</NavLink>
                             <NavLink exact className="item mx-3 p-3" activeClassName="active" to="/login">Login</NavLink>
                         </Fragment>
