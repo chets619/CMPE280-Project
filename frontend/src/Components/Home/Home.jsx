@@ -41,13 +41,23 @@ let Home = (props) => {
     const getCurrLoc = () => {
         if (navigator && navigator.geolocation) {
             return new Promise((resolve, reject) => {
-                navigator.geolocation.getCurrentPosition(pos => {
-                    const coords = pos.coords;
+                // navigator.geolocation.getCurrentPosition(pos => {
+                //     const coords = pos.coords;
+                //     resolve({
+                //         lat: coords.latitude,
+                //         lng: coords.longitude
+                //     });
+                // });
+
+                axios.post("https://www.googleapis.com/geolocation/v1/geolocate?key=" + configs.gmaps).then(data => {
+                    const coords = data.data.location;
+                    console.log(data);
                     resolve({
-                        lat: coords.latitude,
-                        lng: coords.longitude
+                        lat: coords.lat,
+                        lng: coords.lng
                     });
-                });
+                })
+
             });
         }
         return {
