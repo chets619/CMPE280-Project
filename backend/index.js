@@ -213,6 +213,21 @@ app.get('/getFireData', async (req, res) => {
 
     // var jsonContent = JSON.parse(contents);
 
+    // jsonContent.forEach(async data => {
+
+    //     const fire = new Fire({
+    //         loc: {
+    //             lat: data.LATITUDE,
+    //             lng: data.LONGITUDE
+    //         },
+    //         intensity: data.FIRE_SIZE / 50,
+    //         cause: data.STAT_CAUSE_DESCR
+    //     });
+
+    //     await fire.save();
+    // })
+
+
     let result = await Fire.find();
 
     res.send({ success: true, data: result })
