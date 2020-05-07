@@ -89,10 +89,10 @@ let Home = (props) => {
                     data.map((currData, i) => {
                         return <Marker
                             key={i}
-                            name={currData.STAT_CAUSE_DESCR}
+                            name={currData.cause}
                             position={{
-                                lat: currData.LATITUDE,
-                                lng: currData.LONGITUDE
+                                lat: currData.loc && currData.loc.lat || 0,
+                                lng: currData.loc && currData.loc.lng || 0
                             }}
                             onClick={onMarkerClick}
                             icon={require("./fire.png")}
@@ -104,10 +104,10 @@ let Home = (props) => {
                 {
                     data.map((currData, i) => {
                         return <Circle
-                            radius={Math.sqrt(currData.FIRE_SIZE)}
+                            radius={+currData.intensity}
                             center={{
-                                lat: currData.LATITUDE,
-                                lng: currData.LONGITUDE
+                                lat: currData.loc && currData.loc.lat || 0,
+                                lng: currData.loc && currData.loc.lng || 0
                             }}
                             strokeColor='transparent'
                             strokeOpacity={0}
@@ -122,8 +122,8 @@ let Home = (props) => {
                     marker={state.activeMarker}
                     visible={state.showingInfoWindow}>
                     <div>
-                        <div className=""><b>Year:</b> {state.selectedPlace && state.selectedPlace.data.FIRE_YEAR}</div>
-                        <div className=""><b>Cause:</b> {state.selectedPlace && state.selectedPlace.data.STAT_CAUSE_DESCR}</div>
+                        <div className=""><b>Year:</b> {state.selectedPlace && new Date(state.selectedPlace.data.date).getFullYear()}</div>
+                        <div className=""><b>Cause:</b> {state.selectedPlace && state.selectedPlace.data.cause}</div>
                     </div>
                 </InfoWindow>
             </Map>
