@@ -7,6 +7,7 @@ var cookieParser = require('cookie-parser');
 var cors = require('cors');
 const { mongoDB, frontendURL, secret, nexmoKey, nexmoSecret, gmailid, gmailpw } = require('./config');
 const User = require('./Models/UserModel');
+const Fire = require('./Models/FireModel');
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
 const jwt = require('jsonwebtoken');
@@ -135,9 +136,26 @@ app.post('/login', (req, res) => {
 });
 
 
+const addData = async (req) => {
+    const { loc, intensity, cause } = req.body;
+    console.log('loc intensity, cause', loc, intensity, cause)
+
+    const fire = new Fire({
+        loc,
+        intensity, cause
+    });
+
+    return await fire.save();
+}
+
+
 app.post('/sendWildFireAlert', async (req, res) => {
 
     const { lat, lng } = req.body;
+
+    let a = await addData(req);
+
+    console.log('a', a)
 
     let users = await User.find();
 
@@ -189,16 +207,16 @@ const getDistance = (x1, y1, x2, y2) => {
 }
 
 
-app.get('/getFireData', (req, res) => {
-    var fs = require("fs");
-    var contents = fs.readFileSync("wildfire.json");
+app.get('/getFireData', async (req, res) => {
+    // var fs = require("fs");
+    // var contents = fs.readFileSync("wildfire.json");
 
-    var jsonContent = JSON.parse(contents);
+    // var jsonContent = JSON.parse(contents);
 
-    res.send({ success: true, data: jsonContent })
+    let result = await Fire.find();
+
+    res.send({ success: true, data: result })
 })
-
-
 
 //start your server on port 3001
 app.listen(3001);

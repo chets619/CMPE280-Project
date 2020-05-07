@@ -3,13 +3,16 @@ import { NavLink } from 'react-router-dom';
 import "./ReportWildfire.scss";
 import configs from '../../config';
 import axios from "axios";
-import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
+import { Map, GoogleApiWrapper, Marker, Circle } from 'google-maps-react';
 import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 
 let ReportWildfire = (props) => {
 
     const [data, setData] = useState({});
     const [loc, setLoc] = useState({});
+    const [intensity, setIntensity] = useState(0);
+    const [cause, setCause] = useState("");
 
     useEffect(() => {
         let a = getCurrLoc();
@@ -51,10 +54,14 @@ let ReportWildfire = (props) => {
     }
 
     const reportWildfire = async (e) => {
+        let data = {
+            loc: JSON.parse(JSON.stringify(loc)),
+            intensity, cause
+        }
         e.preventDefault();
 
         try {
-            let a = await axios.post(configs.connect + '/sendWildFireAlert', loc);
+            let a = await axios.post(configs.connect + '/sendWildFireAlert', data);
 
             if (a.data.success)
                 alert("Alerts sent successfully!");
@@ -70,21 +77,43 @@ let ReportWildfire = (props) => {
         <Fragment>
             <div className="container card p-3">
                 <center><h3>Mark Coords for wildfire reporting</h3></center>
-                <Map
-                    className="asd"
-                    google={props.google}
-                    zoom={8}
-                    style={mapStyles}
-                    onClick={(t, map, c) => mapClicked(c.latLng, map)}
-                    initialCenter={{ lat: 47.444, lng: -122.176 }}
-                    center={loc}
-                >
-                    <Marker
-                        name={'Location'}
-                        position={loc} />
-                </Map>
+                <Form onSubmit={reportWildfire}>
+                    <Map
+                        className="asd"
+                        google={props.google}
+                        zoom={8}
+                        style={mapStyles}
+                        onClick={(t, map, c) => mapClicked(c.latLng, map)}
+                        initialCenter={{ lat: 47.444, lng: -122.176 }}
+                        center={loc}
+                    >
+                        <Marker
+                            name={'Location'}
+                            position={loc} />
 
-                <Button size="md" className="mt-4" onClick={e => reportWildfire(e)}>Report Wildfire</Button>
+                        <Circle
+                            radius={+intensity}
+                            center={loc}
+                            strokeColor='transparent'
+                            strokeOpacity={0}
+                            strokeWeight={5}
+                            fillColor='#FF0000'
+                            fillOpacity={0.2}
+                        />
+                    </Map>
+
+                    <Form.Group controlId="exampleForm.ControlInput1">
+                        <Form.Label>Fire Intensity</Form.Label>
+                        <Form.Control type="number" placeholder="Radius in meters" required onChange={e => setIntensity(e.target.value)} />
+                    </Form.Group>
+
+                    <Form.Group controlId="exampleForm.ControlInput2">
+                        <Form.Label>Cause of Fire</Form.Label>
+                        <Form.Control type="text" placeholder="Cause" required onChange={e => setCause(e.target.value)} />
+                    </Form.Group>
+
+                    <Button size="md" type="submit" className="mt-4">Report Wildfire</Button>
+                </Form>
             </div>
         </Fragment>
     );
