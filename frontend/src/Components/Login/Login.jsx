@@ -30,7 +30,7 @@ let Login = (props) => {
                 if (decoded.email == "admin")
                     props.history.push("/reportwildfire");
                 else
-                    props.history.push("/wildfiredetails");
+                    props.history.push("/profile/" + decoded._id);
             }
             else
                 alert(a.data.error);

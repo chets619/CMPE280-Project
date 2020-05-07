@@ -22,6 +22,7 @@ function App() {
             <Route exact path="/wildfiredetails" component={WildFireDetails} />
             <Route exact path="/reportwildfire" component={ReportWildfire} />
             <Route exact path="/register" component={Register} />
+            <Route exact path="/profile/:id" component={Register} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/" component={Home} />
           </Switch>

@@ -8,19 +8,37 @@ import axios from "axios";
 import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 
 let Register = (props) => {
+    const { match } = props;
     const [data, setData] = useState({});
     const [loc, setLoc] = useState({});
 
     useEffect(() => {
-        let a = getCurrLoc();
+        if (match.params.id) {
+            axios.get(configs.connect + '/getUser/' + match.params.id).then(response => {
+                console.log('response', response.data)
+                if (response.data.success) {
+                    setLoc(response.data.data.loc);
+                    setData({
+                        ...data,
+                        name: response.data.data.name,
+                        email: response.data.data.email,
+                        city: response.data.data.city,
+                        phone: response.data.data.phone,
+                        loc: response.data.data.loc
+                    });
+                }
+            });
+        } else {
+            let a = getCurrLoc();
 
-        a.then(currLoc => {
-            setLoc(currLoc);
-            setData({
-                ...data,
-                loc: JSON.parse(JSON.stringify(currLoc))
+            a.then(currLoc => {
+                setLoc(currLoc);
+                setData({
+                    ...data,
+                    loc: JSON.parse(JSON.stringify(currLoc))
+                })
             })
-        })
+        }
     }, []);
 
     const getCurrLoc = () => {
@@ -66,6 +84,24 @@ let Register = (props) => {
         }
     }
 
+    const updateUser = async (e) => {
+        e.preventDefault();
+
+        console.log(data);
+
+        try {
+            let a = await axios.post(configs.connect + '/updateUser', { id: match.params.id, ...data });
+
+            if (a.data.success)
+                alert("Successfully Updated!");
+            else
+                alert(a.data.error);
+
+        } catch (error) {
+            alert(error);
+        }
+    }
+
     const mapStyles = {
     };
 
@@ -81,50 +117,55 @@ let Register = (props) => {
 
     return (
         <div className="login-container border border-info col-sm-12 m-auto p-4">
-            <center><h2 className="">Register</h2></center>
+            <center><h2 className="">{
+                match.params.id ? "Update Profile" : "Register"}</h2></center>
 
             <div className="row mt-4">
                 <div className="col-md-6 border-right">
-                    <Form className="p-5" onSubmit={e => registerUser(e)}>
+                    <Form className="p-5" onSubmit={e => match.params.id ? updateUser(e) : registerUser(e)}>
 
                         <Form.Group controlId="formBasicEmail">
                             <Form.Label>Name</Form.Label>
-                            <Form.Control type="text" placeholder="Name" name="name" onChange={e => setData({ ...data, [e.target.name]: e.target.value })} required />
+                            <Form.Control type="text" placeholder="Name" name="name" value={data.name} onChange={e => setData({ ...data, [e.target.name]: e.target.value })} required />
                         </Form.Group>
 
                         <Form.Group controlId="formBasicEmail">
                             <Form.Label>Email address</Form.Label>
-                            <Form.Control type="email" placeholder="Enter email" name="email" onChange={e => setData({ ...data, [e.target.name]: e.target.value })} required />
+                            <Form.Control type="email" placeholder="Enter email" name="email" value={data.email} onChange={e => setData({ ...data, [e.target.name]: e.target.value })} required />
                         </Form.Group>
 
-                        <Form.Group controlId="formBasicPassword">
-                            <Form.Label>Password</Form.Label>
-                            <Form.Control type="password" placeholder="Password" name="pw" onChange={e => setData({ ...data, [e.target.name]: e.target.value })} required />
-                        </Form.Group>
+                        {
+                            match.params.id ? "" : <><Form.Group controlId="formBasicPassword">
+                                <Form.Label>Password</Form.Label>
+                                <Form.Control type="password" placeholder="Password" name="pw" onChange={e => setData({ ...data, [e.target.name]: e.target.value })} required />
+                            </Form.Group>
 
-                        <Form.Group controlId="formBasicPassword">
-                            <Form.Label>Confirm Password</Form.Label>
-                            <Form.Control type="password" placeholder="Confirm Password" name="pw2" onChange={e => setData({ ...data, [e.target.name]: e.target.value })} required />
-                        </Form.Group>
+                                <Form.Group controlId="formBasicPassword">
+                                    <Form.Label>Confirm Password</Form.Label>
+                                    <Form.Control type="password" placeholder="Confirm Password" name="pw2" onChange={e => setData({ ...data, [e.target.name]: e.target.value })} required />
+                                </Form.Group>
+                            </>
+                        }
+
 
                         <Form.Group controlId="formBasicEmail">
                             <Form.Label>City</Form.Label>
-                            <Form.Control type="text" placeholder="City" name="city" onChange={e => setData({ ...data, [e.target.name]: e.target.value })} required />
+                            <Form.Control type="text" placeholder="City" name="city" value={data.city} onChange={e => setData({ ...data, [e.target.name]: e.target.value })} required />
                         </Form.Group>
 
                         <Form.Group controlId="formBasicEmail">
                             <Form.Label>Phone Number</Form.Label>
-                            <Form.Control type="number" placeholder="Phone Number" name="phone" onChange={e => setData({ ...data, [e.target.name]: e.target.value })} required />
+                            <Form.Control type="number" placeholder="Phone Number" value={data.phone} name="phone" onChange={e => setData({ ...data, [e.target.name]: e.target.value })} required />
                         </Form.Group>
 
 
                         <Button variant="primary" type="submit" className="mt-3">
-                            Submit
+                            {match.params.id ? "Update" : "Submit"}
                         </Button>
                     </Form>
                 </div>
                 <div className="col-md-6">
-                    <center><h3>Mark Coords for wildfire reporting</h3></center>
+                    <center><h3>Mark co-ordinates for getting fire updates!</h3></center>
                     <Map
                         className="asd"
                         google={props.google}

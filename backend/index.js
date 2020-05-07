@@ -233,6 +233,24 @@ app.get('/getFireData', async (req, res) => {
     res.send({ success: true, data: result })
 })
 
+app.get('/getUser/:id', async (req, res) => {
+    console.log('req', req.params)
+
+    let result = await User.findById(req.params.id);
+    console.log('result', result)
+
+    res.send({ success: true, data: result })
+})
+
+app.post('/updateUser', async (req, res) => {
+
+    let result = await User.findByIdAndUpdate(req.body.id, req.body);
+
+    res.send({ success: true, data: result })
+})
+
+
+
 //start your server on port 3001
 app.listen(3001);
 console.log("Backend Server Listening on port 3001");
