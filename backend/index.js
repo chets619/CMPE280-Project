@@ -135,6 +135,12 @@ app.post('/login', (req, res) => {
     });
 });
 
+app.post('/addFireData', async (req, res) => {
+    let a = await addData(req);
+
+    res.send({ success: true, result: a });
+})
+
 
 const addData = async (req) => {
     const { loc, intensity, cause } = req.body;
@@ -150,8 +156,9 @@ const addData = async (req) => {
 
 
 app.post('/sendWildFireAlert', async (req, res) => {
+    console.log('req', req.body)
 
-    const { lat, lng } = req.body;
+    const { lat, lng } = req.body.loc;
 
     let a = await addData(req);
 
@@ -161,6 +168,7 @@ app.post('/sendWildFireAlert', async (req, res) => {
 
     users = users.forEach(currUser => {
         if (!(currUser.loc && currUser.loc.lat)) return;
+        console.log('', getDistance(currUser.loc.lat, currUser.loc.lng, lat, lng))
 
         if (getDistance(currUser.loc.lat, currUser.loc.lng, lat, lng) < 0.2) {
             console.log("sent");
@@ -169,7 +177,7 @@ app.post('/sendWildFireAlert', async (req, res) => {
             const to = currUser.phone;
             const text = 'Wildfire Alert! There is a wildfire in your area!';
 
-            // nexmo.message.sendSms(from, to, text);
+            nexmo.message.sendSms(from, to, text);
 
 
             var mailOptions = {
@@ -179,13 +187,13 @@ app.post('/sendWildFireAlert', async (req, res) => {
                 text: 'There seems to be a wildfire in your area... Take care!'
             };
 
-            // transporter.sendMail(mailOptions, function (error, info) {
-            //     if (error) {
-            //         console.log(error);
-            //     } else {
-            //         console.log('Email sent: ' + info.response);
-            //     }
-            // });
+            transporter.sendMail(mailOptions, function (error, info) {
+                if (error) {
+                    console.log(error);
+                } else {
+                    console.log('Email sent: ' + info.response);
+                }
+            });
         }
     })
 

@@ -22,8 +22,10 @@ let Home = (props) => {
             try {
                 let a = await axios.get(configs.connect + '/getFireData');
 
-                if (a.data.success)
+                if (a.data.success) {
+                    console.log('a.data.data', a.data)
                     setData(a.data.data);
+                }
                 else
                     alert(a.data.error);
 
@@ -73,12 +75,49 @@ let Home = (props) => {
         }
     };
 
+    const onCenterMoved = (props, map) => {
+        const coords = JSON.parse(JSON.stringify(map.getCenter()));
+
+        axios.get('https://api.breezometer.com/fires/v1/current-conditions?lat=' + coords.lat + '&lon=' + coords.lng + '&key=' + configs.apiFireKey + '&radius=100').then(res => {
+            console.log('res', res.data)
+            const fires = res.data.data.fires;
+
+            if (fires.length)
+                fires.forEach(fire => {
+                    let obj = {
+                        loc: {
+                            lat: fire.position.lat,
+                            lng: fire.position.lon
+                        },
+                        intensity: fire.position.distance.value * 100,
+                        cause: "Unknown",
+                        date: fire.update_time
+                    };
+
+                    axios.post(configs.connect + "/addFireData", obj).then(successRes => {
+                        console.log('successRes', successRes)
+
+                        setData([...data, successRes.data.result]);
+                    })
+                });
+
+        })
+
+    };
+
     return (
         <div className="card home-container">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h1 class="display-4">Welcome to our Wildfire App!</h1>
+                    <p class="lead">Below mapped are the details for various fires in your area! Register to stay get updates in real time about fires in your area! </p>
+                </div>
+            </div>
             <Map
                 className="asd"
                 google={props.google}
                 zoom={8}
+                onDragend={onCenterMoved}
                 // onClick={(t, map, c) => mapClicked(c.latLng, map)}
                 initialCenter={{ lat: 47.444, lng: -122.176 }}
                 center={loc}
