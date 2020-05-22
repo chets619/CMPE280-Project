@@ -5,11 +5,14 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import configs from '../../config';
 import axios from "axios";
+import { useTranslation } from 'react-i18next';
+import '../../i18n';
 const jwt_decode = require('jwt-decode');
 
 let Login = (props) => {
 
     const [data, setData] = useState({});
+    const [t, i18n] = useTranslation();
 
     const loginUser = async (e) => {
         e.preventDefault();
@@ -43,23 +46,23 @@ let Login = (props) => {
     return (
         <div className="container">
             <div className="login-container border border-info p-3 col-lg-5 col-sm-12 m-auto">
-                <center><h2 className="">Login</h2></center>
+                <center><h2 className="">{t("Login")}</h2></center>
 
                 <Form className="p-5" onSubmit={e => loginUser(e)}>
                     <Form.Group controlId="formBasicEmail">
-                        <Form.Label>Email address</Form.Label>
+                        <Form.Label>{t("Email")}</Form.Label>
                         <Form.Control type="text" placeholder="Enter email" name="email" onChange={e => setData({ ...data, [e.target.name]: e.target.value })} />
                         <Form.Text className="text-muted">
-                            We'll never share your email with anyone else.
+                            {t("EDesc")}
                         </Form.Text>
                     </Form.Group>
 
                     <Form.Group controlId="formBasicPassword">
-                        <Form.Label>Password</Form.Label>
+                        <Form.Label>{t("Password")}</Form.Label>
                         <Form.Control type="password" placeholder="Password" name="pw" onChange={e => setData({ ...data, [e.target.name]: e.target.value })} />
                     </Form.Group>
                     <Button variant="primary" type="submit" className="mt-3">
-                        Submit
+                        {t("Submit")}
                     </Button>
                 </Form>
             </div>

@@ -6,11 +6,14 @@ import Button from 'react-bootstrap/Button';
 import configs from '../../config';
 import axios from "axios";
 import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
+import { useTranslation } from 'react-i18next';
+import '../../i18n';
 
 let Register = (props) => {
     const { match } = props;
     const [data, setData] = useState({});
     const [loc, setLoc] = useState({});
+    const [t, i18n] = useTranslation();
 
     useEffect(() => {
         if (match.params.id) {
@@ -134,23 +137,23 @@ let Register = (props) => {
                     <Form className="p-5" onSubmit={e => match.params.id ? updateUser(e) : registerUser(e)}>
 
                         <Form.Group controlId="formBasicEmail">
-                            <Form.Label>Name</Form.Label>
+                            <Form.Label>{t("Name")}</Form.Label>
                             <Form.Control type="text" placeholder="Name" name="name" value={data.name} onChange={e => setData({ ...data, [e.target.name]: e.target.value })} required />
                         </Form.Group>
 
                         <Form.Group controlId="formBasicEmail">
-                            <Form.Label>Email address</Form.Label>
+                            <Form.Label>{t("Email")}</Form.Label>
                             <Form.Control type="email" placeholder="Enter email" name="email" value={data.email} onChange={e => setData({ ...data, [e.target.name]: e.target.value })} required />
                         </Form.Group>
 
                         {
                             match.params.id ? "" : <><Form.Group controlId="formBasicPassword">
-                                <Form.Label>Password</Form.Label>
+                                <Form.Label>{t("Password")}</Form.Label>
                                 <Form.Control type="password" placeholder="Password" name="pw" onChange={e => setData({ ...data, [e.target.name]: e.target.value })} required />
                             </Form.Group>
 
                                 <Form.Group controlId="formBasicPassword">
-                                    <Form.Label>Confirm Password</Form.Label>
+                                    <Form.Label>{t("CPassword")}</Form.Label>
                                     <Form.Control type="password" placeholder="Confirm Password" name="pw2" onChange={e => setData({ ...data, [e.target.name]: e.target.value })} required />
                                 </Form.Group>
                             </>
@@ -158,12 +161,12 @@ let Register = (props) => {
 
 
                         <Form.Group controlId="formBasicEmail">
-                            <Form.Label>City</Form.Label>
+                            <Form.Label>{t("City")}</Form.Label>
                             <Form.Control type="text" placeholder="City" name="city" value={data.city} onChange={e => setData({ ...data, [e.target.name]: e.target.value })} required />
                         </Form.Group>
 
                         <Form.Group controlId="formBasicEmail">
-                            <Form.Label>Phone Number</Form.Label>
+                            <Form.Label>{t("Phone")}</Form.Label>
                             <Form.Control type="number" placeholder="Phone Number" value={data.phone} name="phone" onChange={e => setData({ ...data, [e.target.name]: e.target.value })} required />
                         </Form.Group>
 
@@ -174,7 +177,7 @@ let Register = (props) => {
                     </Form>
                 </div>
                 <div className="col-md-6">
-                    <center><h3>Mark co-ordinates for getting fire updates!</h3></center>
+                    <center><h3>{t("Mark")}</h3></center>
                     <Map
                         className="asd"
                         google={props.google}

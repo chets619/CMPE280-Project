@@ -4,11 +4,14 @@ import "./Home.scss";
 import configs from '../../config';
 import axios from "axios";
 import { Map, GoogleApiWrapper, Marker, InfoWindow, Circle } from 'google-maps-react';
+import { useTranslation } from 'react-i18next';
+import '../../i18n';
 
 let Home = (props) => {
     const [data, setData] = useState([]);
     const [loc, setLoc] = useState({});
     const [state, setState] = useState({});
+    const [t, i18n] = useTranslation();
 
     useEffect(() => {
         let a = getCurrLoc();
@@ -119,8 +122,8 @@ let Home = (props) => {
         <div className="card home-container">
             <div class="jumbotron jumbotron-fluid">
                 <div class="container">
-                    <h1 class="display-4">Welcome to our Wildfire App!</h1>
-                    <p class="lead">Below mapped are the details for various fires in your area! Register to stay get updates in real time about fires in your area! </p>
+                    <h1 class="display-4">{t("Introduction")}</h1>
+                    <p class="lead">{t("HomeDesc")}</p>
                 </div>
             </div>
             <Map
@@ -171,8 +174,8 @@ let Home = (props) => {
                     marker={state.activeMarker}
                     visible={state.showingInfoWindow}>
                     <div>
-                        <div className=""><b>Year:</b> {state.selectedPlace && new Date(state.selectedPlace.data.date).getFullYear()}</div>
-                        <div className=""><b>Cause:</b> {state.selectedPlace && state.selectedPlace.data.cause}</div>
+                        <div className=""><b>{t("Introduction")}:</b> {state.selectedPlace && new Date(state.selectedPlace.data.date).getFullYear()}</div>
+                        <div className=""><b>{t("Cause")}:</b> {state.selectedPlace && state.selectedPlace.data.cause}</div>
                     </div>
                 </InfoWindow>
             </Map>
